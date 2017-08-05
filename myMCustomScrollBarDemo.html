@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+    <style>
+        .content {
+            width: 250px;
+            max-height: 200px;
+            border: 1px solid gray;
+            overflow: auto;
+            height: auto;
+        }
+
+        #DivData1 {
+            height: 200px;
+        }
+
+        #abc {
+            height: 200px;
+        }
+
+        .label {
+            width: 250px;
+            float: left;
+            padding: 12px;
+        }
+    </style>
+    <script src="../jquery-1.11.3.js"></script>
+    <script src="../angular.js"></script>
+    <script src="../jquery.mCustomScrollbar.js"></script>
+    <script src="myMCustomScrollBarDemoController.js"></script>
+    <script src="ngMCustomScrollBar.js"></script>
+</head>
+<body data-ng-app="myMCustomScrollBarDemo" data-ng-controller="myMCustomScrollBarDemoController">
+    <div class="label">
+        <label>Using ng-m-custom-scroll</label>
+        <div class="content" ng-m-custom-scroll>
+            <div id="DivData">
+                <div data-ng-repeat="item in Items">
+                    {{item}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="label">
+        <label>Using ng-custom-scroll-id</label>
+        <div class="content" ng-m-custom-scroll ng-scroll-config="configScroll" ng-custom-scroll-id="DivData1" ng-custom-scroll-class="">
+            <div id="DivData1">
+                <div data-ng-repeat="item in Items">
+                    {{item}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="label">
+        <label>Using ng-custom-scroll-class</label>
+        <div class="content" ng-m-custom-scroll ng-scroll-config="configScroll1" ng-custom-scroll-id="" ng-custom-scroll-class="customClass">
+            <div id="abc">
+                <div data-ng-repeat="item in Items">
+                    {{item}}
+                </div>
+            </div>
+        </div>
+    </div>-->
+</body>
+</html>
